@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign UP"
+        android:textColor="@color/white"
+        android:textSize="70dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/sign_up"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName: "
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:id="@+id/name"
+        android:layout_below="@id/sign_up"
+        />
+    <EditText
+        android:id="@+id/u_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter UserName"
+        android:layout_alignBaseline="@id/name"
+        android:layout_toRightOf="@id/name"
+        android:textSize="25dp"
+        android:breakStrategy="high_quality"
+        android:background="@color/teal_700"
+        android:textColorHint="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:background="@color/teal_200"
+        android:textSize="40dp"
+        android:id="@+id/Pass"
+        android:layout_below="@id/name"
+        />
+    <EditText
+        android:id="@+id/Pass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password..."
+        android:textSize="25dp"
+        android:layout_alignBaseline="@id/Pass"
+        android:layout_toRightOf="@id/Pass"
+        android:background="@color/teal_200"
+        android:textColorHint="@color/white"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone_no: "
+        android:background="@color/purple_500"
+
+
+        android:textSize="40dp"
+        android:id="@+id/phone"
+        android:layout_below="@id/Pass"
+        />
+    <EditText
+        android:id="@+id/phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your phone_no..."
+        android:textSize="25dp"
+        android:background="@color/purple_500"
+        android:textColorHint="@color/white"
+        android:layout_alignBaseline="@id/phone"
+        android:layout_toRightOf="@id/phone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail_Id: "
+        android:background="@color/purple_700"
+        android:textSize="40dp"
+        android:id="@+id/mail"
+        android:layout_below="@id/phone"
+        />
+    <EditText
+        android:id="@+id/mail_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email_id"
+        android:background="@color/purple_700"
+        android:textColorHint="@color/white"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@id/mail"
+        android:layout_toRightOf="@id/mail"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:text="Sign_UP"
+        android:textSize="40dp"
+        android:id="@+id/sign"
+        />
+    </RelativeLayout>
